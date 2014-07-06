@@ -1,0 +1,3 @@
+*       *       *       *       *       /home/pi/fmanage.sh >> /tmp/gpio.log 2>&1
+*       *       *       *       *       /home/pi/xfer.sh >> /tmp/gpio.log 2>&1
+*/3     *       *       *       *       sudo /home/pi/cam-watch.sh >> /tmp/gpio.log 2>&1
