@@ -1,4 +1,4 @@
 homedir='/opt/pi-monitor/'
 *       *       *       *       *       ${homedir}fmanage.sh >> /tmp/gpio.log 2>&1
 *       *       *       *       *       ${homedir}xfer.sh >> /tmp/gpio.log 2>&1
-*/3     *       *       *       *       sudo ${homedir}cam-watch.sh >> /tmp/gpio.log 2>&1
+*/3     *       *       *       *       sudo ${homedir}detector-watch.sh >> /tmp/gpio.log 2>&1

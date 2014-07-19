@@ -10,7 +10,7 @@
 # Revisions: 0.1 (20100506), 0.2 (20100507)
 homedir='/opt/pi-monitor/'
 imgdir='/opt/img-dir/'
-NAME=pir-detect.sh
+NAME=event-detect.py
 START=${homedir}${NAME}
 NOTIFY=person1email
 NOTIFYCC=person2email
