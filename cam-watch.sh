@@ -8,9 +8,10 @@
 # This needs to be run as root or a user that can start system services.
 #
 # Revisions: 0.1 (20100506), 0.2 (20100507)
-
+homedir='/opt/pi-monitor/'
+imgdir='/opt/img-dir/'
 NAME=pir-detect.sh
-START=/home/pi/$NAME
+START=${homedir}${NAME}
 NOTIFY=person1email
 NOTIFYCC=person2email
 GREP=/bin/grep
@@ -29,7 +30,7 @@ case "$?" in
    1)
    echo "$NAME is NOT RUNNING. Starting $NAME and sending notices."
    #cleanup still directory for restart
-   $RM -f /home/pi/camera/*
+   $RM -f ${imgdir}*
    $START 2>&1 >/dev/null &
    NOTICE=/tmp/watchdog.txt
    echo "$NAME was not running and was started on `$DATE`" > $NOTICE
